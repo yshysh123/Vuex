@@ -91,6 +91,7 @@ export default {
 }
 ```
 # Getters #
+
 有些状态需要做二次处理，就可以使用getters。通过this.$store.getters.valueName对派生出来的状态进行访问。或者直接使用辅助函数mapGetters将其映射到本地计算属性中去。
 ```const getters = {
   strLength: state => state.aString.length
