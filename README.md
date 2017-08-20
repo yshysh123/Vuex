@@ -8,7 +8,8 @@ Vuex初体验
 
 State负责存储整个应用的状态数据，一般需要在使用的时候在跟节点注入store对象，后期就可以使用this.$store.state直接获取状态
 
-```//store为实例化生成的
+```
+//store为实例化生成的
 import store from './store'
 
 new Vue({
@@ -19,7 +20,8 @@ new Vue({
 ```
 这个store可以理解为一个容器，包含着应用中的state等。实例化生成store的过程是：
 
-```const mutations = {...};
+```
+const mutations = {...};
 const actions = {...};
 const state = {...};
 
