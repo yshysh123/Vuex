@@ -6,6 +6,7 @@ Vuex初体验
 
 # State #
 
+
 State负责存储整个应用的状态数据，一般需要在使用的时候在跟节点注入store对象，后期就可以使用this.$store.state直接获取状态
 
 ```
@@ -63,8 +64,8 @@ Mutations的中文意思是“变化”，利用它可以更改状态，本质�
 }
 ```
 或者使用辅助函数mapMutations直接将触发函数映射到methods上，这样就能在元素事件绑定上直接使用了。如：
-```import {mapMutations} from 'vuex'
-
+```
+import {mapMutations} from 'vuex'
 //我是一个组件
 export default {
   methods: mapMutations([
