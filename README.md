@@ -10,7 +10,7 @@ Vuex初体验
 State负责存储整个应用的状态数据，一般需要在使用的时候在跟节点注入store对象，后期就可以使用this.$store.state直接获取状态
 
 ```
-//store为实例化生成的
+//store是为实例化生成的
 import store from './store'
 
 new Vue({
@@ -32,7 +32,9 @@ Vuex.Store({
   mutation
 });
 ```
+
 后续在组件中使用的过程中，如果想要获取对应的状态你就可以直接使用this.$store.state获取，当然，也可以利用vuex提供的mapState辅助函数将state映射到计算属性中去，如
+
 ```//我是组件
 import {mapState} from 'vuex'
 
